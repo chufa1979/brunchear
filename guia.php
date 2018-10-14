@@ -27,6 +27,22 @@
 	  }
 </script>
 
+<!-- fancyBox -->
+<script type="text/javascript" src="js/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.fancybox').fancybox();
+
+
+		$.fancybox.open({
+					scrolling : 'auto',
+					autoWidth : 'true'
+				});
+		
+	});
+</script>
+
 </head>
 
 <body>
@@ -42,17 +58,53 @@
   <div class="banner_1100 separa_bottom"><img src="ads/banner_afs_1100x150px 11-10.jpg" width="1100" height="150" alt="ADS" /></div>
   <div class="main">
     <h1><span>ELEG&Iacute;</span> BRUNCHEAR <span>EN TODO EL PA&Iacute;S</span></h1>
-    <p>Colocar aquí el contenido<br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </p>
+    <div class="restos">
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    <div class="resto_thumb" style="background-image:url(upload/Aldos.jpg);">
+      <div class="transp"><a href="resto.php" class="fancybox fancybox.iframe">ALDO'S</a></div>
+    </div>
+    </div>
   </div>
   <div class="banner_1100"><img src="ads/banner_gdi_1100x150px 11-10.jpg" width="1100" height="150" alt="ADS" /></div>
 

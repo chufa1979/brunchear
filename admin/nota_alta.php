@@ -189,7 +189,7 @@ do {
             <option value="5">Brunch951</option>
           </select>
           <label for="menues">Nota</label>
-          <textarea name="nota" cols="40" rows="5" class="form-txtarea" id="nota">
+          <textarea name="nota" cols="40" rows="10" class="form-txtarea" id="nota">
 </textarea>          <br /></td>
         </tr>
       </table>

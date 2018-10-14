@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsnd" value="name:id;datatype:int,name:titulo;datatype:string,name:nota;datatype:blob,name:autor;datatype:int,name:imagen;datatype:string,name:categoria;datatype:int" />
+	<infoitem key="UD_rsa" value="name:id;datatype:int,name:autor;datatype:string,name:imagen;datatype:string,name:instagram;datatype:string" />
+	<infoitem key="UD_banner_sup" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_banner_sup2" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+</info>

@@ -4,4 +4,5 @@
 	<infoitem key="UD_rs_banner_2" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
 	<infoitem key="UD_rs_banner_3" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
 	<infoitem key="UD_rs_banner_4" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_rsnot" value="name:id;datatype:int,name:titulo;datatype:string,name:nota;datatype:blob,name:autor;datatype:int,name:imagen;datatype:string,name:categoria;datatype:int" />
 </info>

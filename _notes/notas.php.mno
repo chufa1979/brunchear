@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsno" value="name:id;datatype:int,name:titulo;datatype:string,name:nota;datatype:blob,name:autor;datatype:int,name:imagen;datatype:string,name:categoria;datatype:int" />
+</info>

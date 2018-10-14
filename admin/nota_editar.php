@@ -77,7 +77,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 	
   $updateSQL = sprintf("UPDATE brunchear_nota SET titulo=%s, nota=%s, autor=%s, categoria=%s, imagen='$fichero1' WHERE id=%s",
                        GetSQLValueString($_POST['titulo'], "text"),
-                       GetSQLValueString($_POST['nota'], "text"),
+                       GetSQLValueString($_POST['notades'], "text"),
                        GetSQLValueString($_POST['autor'], "text"),
                        GetSQLValueString($_POST['categoria'], "text"),
                        GetSQLValueString($_POST['id'], "int"));
@@ -239,8 +239,8 @@ do {
               <option value="5" <?php if (!(strcmp(5, $row_rsn['categoria']))) {echo "selected=\"selected\"";} ?>>Brunch951</option>
             </select>
             <label for="menues">Nota</label>
-            <textarea name="nota" cols="40" rows="5" class="form-txtarea" id="nota"><?php echo $row_rsn['nota']; ?></textarea>
-            <br /></td>
+            <textarea name="notades" cols="40" rows="10" class="form-txtarea" id="notades"><?php echo $row_rsn['nota']; ?></textarea>
+          <br /></td>
         </tr>
       </table>
       <br />
@@ -251,7 +251,7 @@ do {
             <?php if ($row_rsn['imagen']<>'') { ?>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="320" align="left" class="separador"><img src="<?php echo $row_rsn['imagen']; ?>" width="310" height="310" alt="Imagen" /></td>
+                <td width="320" align="left" class="separador"><img src="<?php echo $row_rsn['imagen']; ?>" alt="Imagen" /></td>
                 <td align="left" class="separador"><div class="listing" style="display:none" id="open_ajax_dialog_codediv1">
                 <div id="ajax_dialog1">Dialog.alert({url: "nota_eliminar_img.php?vid=<?php echo $row_rsn['id']; ?>", options: {method: 'get'}},  
                   {className: "alphacube", width:440, height:280, zIndex:999, okLabel: "Close"});</div>
@@ -271,8 +271,8 @@ do {
 
           </table>
           <?php } ?>
-          <input name="id" type="hidden" id="id" value="<?php echo $row_rs['id']; ?>" />
-          <input name="a1" type="hidden" id="a1" value="<?php echo $row_rs['imagen01']; ?>" />
+          <input name="id" type="hidden" id="id" value="<?php echo $row_rsn['id']; ?>" />
+          <input name="a1" type="hidden" id="a1" value="<?php echo $row_rsn['imagen01']; ?>" />
           <input name="e" type="hidden" id="e" value="2" />
           
           <input type="hidden" name="MM_update" value="form1" />

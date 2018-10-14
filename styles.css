@@ -173,9 +173,10 @@ p { padding:0; margin: 0}
 h1 {
 	font-family: 'Proxima_nova_bold';
 	font-size:40px;
+	line-height:normal;
 	display:block;
 	margin:0;
-	padding:40px 0px 20px 0px;
+	padding:30px 0px 20px 0px;
 	color:#1e1e1f;
 	}
 h1 span {
@@ -209,14 +210,22 @@ h2 {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 	}
-.post .listado {
+.post_recuadro {
+	border:1px solid #000;
+	padding:20px;
+	overflow:auto;
+	}
+.post .listado,
+.post_recuadro .listado {
 	width:100%;
 	padding-bottom:6px;
 	height:70px;
+	cursor:pointer;
 	}
-.post .listado .num {
+.post .listado .num,
+.post_recuadro .listado .num {
 	float:left;
-	margin-right:5px;
+	border-right:5px solid #fff;
 	background-color:#000;
     font-family: 'Raleway', sans-serif;
 	font-weight:600;
@@ -232,14 +241,16 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	}
-.post .listado .foto {
+.post .listado .foto,
+.post_recuadro .listado .foto {
 	float:left;
 	margin-right:5px;
 	}
-.post .listado .txt {
+.post .listado .txt,
+.post_recuadro .listado .txt {
 	padding:0px 5px;
 	min-height:100%;
-	background-color:#f3f3f3;
+	background-color:#efefef;
 	-webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -262,11 +273,138 @@ h2 {
 	float:left;
 	}
 
+/* NOTAS  ==================================== */
+.autor {
+	border-bottom:1px solid #CCC;
+	border-top:1px solid #CCC;
+	padding:10px 0px;
+	overflow:auto;
+	}
+.autor .foto {
+	float:left;
+	width:70px;
+	height:70px;
+	padding-right:20px;
+	}
+.autor .foto img {
+	border-radius: 50px;
+	width:100%;
+	height:auto;
+	}
+.autor .nombre {
+	font-family: 'Proxima_nova_bold';
+	font-size:20px;
+	color:#ebc644;
+	padding-top:10px;
+	}
+.autor .seguir {
+	font-family: 'Proxima_nova';
+	font-size:16px;
+	}
+.autor .seguir span {
+	font-size:12px;
+	}
+.post_content {
+	width:100%;
+	overflow:auto;
+	border-bottom:3px solid #000;
+	padding:20px 0px 40px 0px;
+	margin-bottom:20px;
+	}
+
+/* GUIA  ===================================== */
+.restos {
+	float:left;
+	width:100%;
+	padding-bottom:30px;
+	}
+.resto_thumb {
+	float:left;
+	width:170px;
+	height:170px;
+	background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+	margin:0px 10px 10px 0px;
+	cursor:pointer;
+	}
+.resto_thumb:hover {
+	transform: scale(1.05);
+	}
+.resto_thumb .transp {
+	width:100%;
+	min-height:100%;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-family: 'Proxima_nova_bold';
+	color:#fff;
+	text-align:center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	}
+.resto_thumb .transp a {
+	color:#fff;
+	}
+.resto_thumb .transp:hover {
+	background-color:rgba(0, 0, 0, 0.0);
+	}
+
+/* RESTO LIGHTBOX  ============================ */
+.content_resto {
+	margin:0 auto;
+	width: 900px;
+	background-color:#FFF;
+	}
+.content_resto .foto {
+	width:100%;
+	}
+.content_resto .recuadro {
+	padding:20px;
+	overflow:auto;
+	}
+.content_resto .recuadro h1 {
+	font-family: 'Proxima_nova_bold';
+	font-size:40px;
+	padding:20px 0px 20px 0px;
+	width:580px;
+	border-bottom:1px solid #000;
+	}
+.content_resto .mapa {
+	float:right;
+	width:250px;
+	height:250px;
+	}
+.content_resto .recuadro .txt {
+	float:left;
+	width:580px;
+	padding:30px 0px;
+	}
+.content_resto .recuadro .datos {
+	float:left;
+	width:100%;
+	padding:15px 0px 30px 0px;
+	border-top:1px solid #000;
+	font-size:14px;
+	line-height:normal;
+	}
+.content_resto .recuadro .datos .colum {
+	width:50%;
+	float:left;
+	}
+
+
+
+
+
 
 /* CONTACTO  ================================= */
 .contacto {
 	padding:0px 20px 20px 20px;
-	background-color:#F2F2F2;
+	background-color:#efefef;
 	overflow:auto;
 	}
 

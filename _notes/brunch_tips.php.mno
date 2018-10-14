@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_banner_sup" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_banner_sup2" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+</info>

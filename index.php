@@ -54,6 +54,12 @@ $query_rs_banner_4 = "SELECT * FROM brunchear_banner WHERE ubicacion = 4";
 $rs_banner_4 = mysql_query($query_rs_banner_4, $cone) or die(mysql_error());
 $row_rs_banner_4 = mysql_fetch_assoc($rs_banner_4);
 $totalRows_rs_banner_4 = mysql_num_rows($rs_banner_4);
+
+mysql_select_db($database_cone, $cone);
+$query_rsnot = "SELECT * FROM brunchear_nota ORDER BY id DESC";
+$rsnot = mysql_query($query_rsnot, $cone) or die(mysql_error());
+$row_rsnot = mysql_fetch_assoc($rsnot);
+$totalRows_rsnot = mysql_num_rows($rsnot);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -98,21 +104,18 @@ $totalRows_rs_banner_4 = mysql_num_rows($rs_banner_4);
   <div class="banner_1100 separa_bottom"><a href="<?php echo $row_rs_banner_1['link']; ?>" target="_blank"><img src="<?php echo $row_rs_banner_1['banner']; ?>" alt="<?php echo $row_rs_banner_1['alt']; ?>" /></a></div>
   <div class="columna_50 separa_der">
     <div class="post separa_bottom">
-      <div class="listado">
+    <?php for($i=1;$i<=3;$i++) { ?>
+      <div class="listado" onclick="window.location = 'post.php?vid=<?php echo $row_rsnot['id']; ?>';">
         <div class="num">1</div>
-        <div class="foto"><img src="upload/thumb_nota.jpg" width="110" height="70" alt="Imagen" /></div>
-        <div class="txt">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</div>
+        <div class="foto"><img src="<?php echo $row_rsnot['imagen']; ?>" width="110" height="70" alt="<?php echo $row_rsnot['titulo']; ?>" /></div>
+        <div class="txt"><?php echo $row_rsnot['titulo']; ?></div>
       </div>
-      <div class="listado">
-        <div class="num">2</div>
-        <div class="foto"><img src="upload/thumb_nota.jpg" width="110" height="70" alt="Imagen" /></div>
-        <div class="txt">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</div>
-      </div>
-      <div class="listado">
-        <div class="num">3</div>
-        <div class="foto"><img src="upload/thumb_nota.jpg" width="110" height="70" alt="Imagen" /></div>
-        <div class="txt">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an.</div>
-      </div>
+      <?php $row_rsnot = mysql_fetch_assoc($rsnot); ?>
+      <?php } ?>
+      
+      
+      
+      
     </div>
 <div class="banner_540">
 <a href="<?php echo $row_rs_banner_2['link']; ?>" target="_blank"><img src="<?php echo $row_rs_banner_2['banner']; ?>" alt="<?php echo $row_rs_banner_2['alt']; ?>" /></a></div>
@@ -149,4 +152,6 @@ $totalRows_rs_banner_4 = mysql_num_rows($rs_banner_4);
 </html>
 <?php
 mysql_free_result($rs_banner_1);
+
+mysql_free_result($rsnot);
 ?>

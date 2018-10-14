@@ -1,4 +1,49 @@
-<?php $page = 2; ?>
+<?php require_once('Connections/cone.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+mysql_select_db($database_cone, $cone);
+$query_banner_sup = "SELECT * FROM brunchear_banner WHERE ubicacion = 5";
+$banner_sup = mysql_query($query_banner_sup, $cone) or die(mysql_error());
+$row_banner_sup = mysql_fetch_assoc($banner_sup);
+$totalRows_banner_sup = mysql_num_rows($banner_sup);
+
+mysql_select_db($database_cone, $cone);
+$query_banner_sup2 = "SELECT * FROM brunchear_banner WHERE ubicacion = 6";
+$banner_sup2 = mysql_query($query_banner_sup2, $cone) or die(mysql_error());
+$row_banner_sup2 = mysql_fetch_assoc($banner_sup2);
+$totalRows_banner_sup2 = mysql_num_rows($banner_sup2);
+
+ $page = 2; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -39,22 +84,18 @@
 <!-- FIN menu -->
 
   </div>
-  <div class="banner_1100 separa_bottom"><img src="ads/banner_afs_1100x150px 11-10.jpg" width="1100" height="150" alt="ADS" /></div>
+  <div class="banner_1100 separa_bottom"><a href="<?php echo $row_banner_sup['link']; ?>" target="_blank"><img src="<?php echo $row_banner_sup['banner']; ?>" alt="<?php echo $row_banner_sup['alt']; ?>" /></a></div>
   <div class="main">
     <h1>BRUNCH TIPS</h1>
-    <p>Colocar aquí el contenido<br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </p>
+        <div class="post_recuadro">
+			<?php $idcat = 1;?>
+            <?php include("notas.php"); ?>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+<div class="banner_1100"><a href="<?php echo $row_banner_sup2['link']; ?>" target="_blank"><img src="<?php echo $row_banner_sup2['banner']; ?>" alt="<?php echo $row_banner_sup2['alt']; ?>" /></a></div>    
 </div>
-  <div class="banner_1100"><img src="ads/banner_gdi_1100x150px 11-10.jpg" width="1100" height="150" alt="ADS" /></div>
+
 
   <!-- Foot -->
 <?php include("foot.php"); ?>
@@ -63,3 +104,6 @@
 </div>
 </body>
 </html>
+<?php
+mysql_free_result($banner_sup);
+?>
