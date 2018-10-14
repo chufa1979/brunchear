@@ -1,0 +1,239 @@
+/*------------------------------------------------------- */
+/* Smartphones  ----------------------------------------- */
+/*------------------------------------------------------- */
+@media only screen and (max-width : 320px) {
+
+
+
+
+
+}
+
+
+
+
+/*---------------------------------------------------------------------- */
+/* Smartphones (portrait) -------------------------------- */
+/*---------------------------------------------------------------------- */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+body, html {
+	font-size: 14px;
+	}
+.header {
+	padding: 0px 15px 15px 15px;
+	margin-bottom:10px;
+	}
+.logo {
+	padding-top:20px;
+	width:140px;
+	}
+.logo img {
+	width:100%;
+	height:auto;
+	}
+#nav { display:none; }
+#nav_responsive {
+	display:block;
+	}
+.accordion {
+	padding:15px 0px 0px 0px;
+	}
+#contenedor {
+	width:95%;
+	padding:0px 5px;
+	}
+.columna_50 {
+	float:left;
+	width:100%;
+	}
+.separa_der {
+	margin-right:1%;
+	}
+#mapa {
+	padding-top:10px;
+	}
+.destaca_redes {
+	width:48%;
+	padding-bottom:10px;
+	}
+.home_destacados .thumb {
+	padding:0px 2% 10px 2%;
+	width:46%;
+	}
+.home_destacados .thumb img {
+	width:100%;
+	height:auto;
+	}
+.post .listado .txt {
+	line-height:normal;
+	}
+.foot {
+	padding:10px;
+	font-size:12px;
+	}
+
+
+
+
+
+
+
+}
+
+
+
+/*-------------------------------------------------------------------- */
+/* Smartphones (landscape) -------------------------------------------- */
+/*-------------------------------------------------------------------- */
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+.header {
+	padding: 0px 20px 20px 20px;
+	margin-bottom:10px;
+	}
+.logo {
+	padding-top:20px;
+	}
+#nav { display:none; }
+#nav_responsive {
+	display:block;
+	}
+.accordion {
+	padding:20px 0px 0px 0px;
+	}
+#contenedor {
+	width:95%;
+	padding:0px 10px;
+	}
+.columna_50 {
+	float:left;
+	width:100%;
+	}
+.separa_der {
+	margin-right:2%;
+	}
+#mapa {
+	padding-top:10px;
+	}
+.destaca_redes {
+	width:48%;
+	padding-bottom:10px;
+	}
+.home_destacados .thumb {
+	padding:0px 1% 10px 1%;
+	width:31%;
+	}
+.home_destacados .thumb img {
+	width:100%;
+	height:auto;
+	}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*------------------------------------------------------------------ */
+/* iPads (portrait) ---------------------------------- */
+/*------------------------------------------------------------------ */
+@media only screen and (min-width : 768px) and (max-width : 959px) {
+#nav { display:none; }
+#nav_responsive {
+	display:block;
+	}
+.logo {	padding-top:30px;
+	}
+#contenedor {
+	width:95%;
+	padding:0px 10px;
+	}
+.columna_50 {
+	float:left;
+	width:49%;
+	}
+.separa_der {
+	margin-right:2%;
+	}
+.destaca_redes {
+	width:48%;
+	}
+.home_destacados .thumb {
+	padding:0px 6px 12px 6px;
+	}
+.post .listado .txt {
+	line-height:normal;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------- */
+/* iPads (landscape) ---------------------------------------------- */
+/*----------------------------------------------------------------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+#contenedor {
+	width:95%;
+	padding:0px 10px;
+	}
+.columna_50 {
+	float:left;
+	width:49%;
+	}
+.separa_der {
+	margin-right:2%;
+	}
+.destaca_redes {
+	width:48%;
+	}
+
+	
+
+	
+}
+
+
+/*----------------------------------------------------------------- */
+/* Desktop Small -------------------------------------------------- */
+/*----------------------------------------------------------------- */
+@media only screen and (min-width : 1025px) and (max-width : 1140px) {
+#contenedor {
+	width:95%;
+	padding:0px 10px;
+	}
+.columna_50 {
+	float:left;
+	width:49%;
+	}
+.separa_der {
+	margin-right:2%;
+	}
+.destaca_redes {
+	width:48%;
+	float:left;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+

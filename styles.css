@@ -1,0 +1,329 @@
+/* ================================================
+   FONT FACE
+   ============================================== */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+@font-face {
+    font-family: 'Proxima_nova';
+    src: url('fuentes/proximanova-regular.eot');
+    src: url('fuentes/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+		url('fuentes/proximanova-regular.woff') format('woff'),
+		url('fuentes/proximanova-regular.ttf') format('truetype'),
+		url('fuentes/proximanova-regular.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	
+@font-face {
+    font-family: 'Proxima_nova_bold';
+    src: url('fuentes/proximanova-semibold.eot');
+    src: url('fuentes/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+		url('fuentes/proximanova-semibold.woff') format('woff'),
+		url('fuentes/proximanova-semibold.ttf') format('truetype'),
+		url('fuentes/proximanova-semibold.svg#proxima_nova_ltbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+
+/* =================================================
+   GENERAL
+   ============================================== */
+body, html {
+	margin: 0px;
+	padding:0px;
+	font-family: 'Proxima_nova';
+	font-size: 15px;
+	font-weight: 400;
+	line-height:22px;
+	color:#333;
+	height:100%;
+	background-image: url(img/background.jpg);
+	}
+img { border: 0px; }
+a {	text-decoration: none; color:#666;}
+strong { font-weight: 700; }
+p { padding:0; margin: 0}
+
+/* =================================================
+   HEADER
+   ============================================== */
+.header {
+	width:100%;
+	padding: 0px 25px 30px 25px;
+	margin-bottom:15px;
+	z-index:999;
+	color:#FFF;
+	background-color:#1e1e1f;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+.logo {
+	float:left;
+	padding-top:60px;
+	}
+
+/* =================================================
+   NAV
+   ============================================== */
+#nav {
+	float:right;
+	padding-top:45px;
+	}
+#nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+#nav ul li {
+	float: left;
+	}
+#nav ul li a {
+	font-family: 'Proxima_nova_bold';
+	font-size:15px;
+	color: #fff;
+	display: block;
+	padding:25px 10px 0px 10px;
+	text-decoration: none;
+	}
+#nav ul li a:hover {
+	background-image: url(img/icon_menu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	color:#F7E349;
+	}
+#nav ul li.active {
+	color: #fff;
+	background-image: url(img/icon_menu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	}
+
+/* =================================================
+   NAV RESPONSIVE ACCORDION
+   ============================================== */
+#nav_responsive {
+	float:right;
+	width:auto;
+	display:none;
+	}
+.accordion {
+	padding:30px 0px 0px 0px;
+	margin: 0px;
+	}
+.accordion ul,
+.accordion li {
+	margin: 0px;
+	padding:0px;
+	border: 0px;
+	list-style: none;
+	cursor: pointer;
+	display: block;
+	text-align:right;
+	}
+.m1 {
+	display: block;
+	background-image: url(img/menu.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding: 2px 35px 2px 0px;
+	color:#fff;
+	}
+.m2 {
+	display: block;
+	padding:15px 0px 0px 0px;
+	font-family: 'Proxima_nova_bold';
+	font-size:15px;
+	color:#fff;
+	}
+
+
+/* =================================================
+   ADS / BANNERS
+   ============================================== */
+.banner_1100,
+.banner_540 {
+	width:100%;
+	float:left;
+	}
+.banner_1100 img,
+.banner_540 img {
+	width:100%;
+	height:auto;
+	}
+
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
+#contenedor {
+	background-color:#FFF;
+	width:1100px;
+	padding:0px 20px;
+	min-height:100%;
+	margin:0 auto;
+	}
+.main {
+	width:100%;
+	padding-bottom:10px;
+	float:left;
+	}
+h1 {
+	font-family: 'Proxima_nova_bold';
+	font-size:40px;
+	display:block;
+	margin:0;
+	padding:40px 0px 20px 0px;
+	color:#1e1e1f;
+	}
+h1 span {
+	font-family: 'Proxima_nova';
+	}
+h2 {
+	font-family: 'Proxima_nova_bold';
+	font-size:30px;
+	}
+
+.separa_der {
+	margin-right:20px;
+	}
+.separa_bottom {
+	margin-bottom:10px;
+	}
+
+/* HOME  ================================= */
+.columna_50 {
+	float:left;
+	width:540px;
+	}
+#mapa {
+	width:100%;
+	}
+.post {
+	width:100%;
+	padding:6px 6px 0px 6px;
+	border:1px solid #1e1e1f;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+.post .listado {
+	width:100%;
+	padding-bottom:6px;
+	height:70px;
+	}
+.post .listado .num {
+	float:left;
+	margin-right:5px;
+	background-color:#000;
+    font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	font-size:24px;
+	color:#fff;
+	min-height:100%;
+	width:30px;
+	text-align:center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	}
+.post .listado .foto {
+	float:left;
+	margin-right:5px;
+	}
+.post .listado .txt {
+	padding:0px 5px;
+	min-height:100%;
+	background-color:#f3f3f3;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+
+.home_destacados {
+	border:10px solid #eabe43;
+	background-color:#fff;
+	padding:10px;
+	clear:both;
+	margin-bottom:10px;
+	overflow:auto;
+	}
+.home_destacados .thumb {
+	float:left;
+	padding:0px 6px;
+	}
+.destaca_redes {
+	width:260px;
+	float:left;
+	}
+
+
+/* CONTACTO  ================================= */
+.contacto {
+	padding:0px 20px 20px 20px;
+	background-color:#F2F2F2;
+	overflow:auto;
+	}
+
+input, textarea, select, button {
+	font-family: 'Proxima_nova';
+	font-size: 15px;
+	font-weight: 400;
+	-webkit-appearance: none;
+    -webkit-border-radius: 0;
+	color:#000;
+	}
+
+::placeholder,
+:-moz-placeholder,
+:-ms-input-placeholder,
+::-webkit-input-placeholder {
+	color:#000;
+	opacity:1;
+	}
+
+.contacto_campos {
+	width:70%;
+	display:block;
+	padding:15px;
+	border:1px solid #B3B3B3;
+	background-color:#fff;
+	margin-bottom:20px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+	}
+.enviar {
+	font-family: 'Proxima_nova';
+	font-size: 20px;
+	background-color:#1e1e1f;
+	border:none;
+	color:#fff;
+	padding:10px 50px;
+	cursor:pointer;
+	float:left;
+	-webkit-appearance: none;
+	}
+
+/* ==========================================
+   FOOT
+   ========================================== */
+.foot {
+	background-color:#CCC;
+	width:auto;
+	padding:20px;
+	text-align:center;
+	clear:both;
+	border-top:10px solid #fff;
+	}
+.foot a {color:#999; }
+.foot a:hover {color:#000; }
+
+
+
+

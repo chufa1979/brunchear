@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsautor" value="name:id;datatype:int,name:autor;datatype:string,name:imagen;datatype:string,name:instagram;datatype:string" />
+	<infoitem key="UD_rs" value="name:id;datatype:int,name:titulo;datatype:string,name:nota;datatype:string,name:autor;datatype:int,name:imagen;datatype:string,name:categoria;datatype:int" />
+	<infoitem key="UD_rsn" value="name:id;datatype:int,name:titulo;datatype:string,name:nota;datatype:string,name:autor;datatype:int,name:imagen;datatype:string,name:categoria;datatype:int" />
+</info>

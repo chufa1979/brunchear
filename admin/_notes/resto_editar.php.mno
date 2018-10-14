@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs" value="name:id;datatype:int,name:restaurante;datatype:string,name:direccion;datatype:string,name:barrio;datatype:string,name:telefono;datatype:string,name:latitud;datatype:string,name:longitud;datatype:string,name:descripcion;datatype:blob,name:menu;datatype:blob,name:imagen01;datatype:string,name:imagen02;datatype:string,name:imagen03;datatype:string" />
+</info>

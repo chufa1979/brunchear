@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rs_banner_1" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_rs_banner_2" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_rs_banner_3" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+	<infoitem key="UD_rs_banner_4" value="name:id;datatype:int,name:banner;datatype:string,name:link;datatype:string,name:ubicacion;datatype:int,name:alt;datatype:string" />
+</info>
