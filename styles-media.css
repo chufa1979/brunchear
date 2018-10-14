@@ -56,13 +56,10 @@ body, html {
 	width:48%;
 	padding-bottom:10px;
 	}
-.home_destacados .thumb {
-	padding:0px 2% 10px 2%;
-	width:46%;
-	}
-.home_destacados .thumb img {
-	width:100%;
-	height:auto;
+.home_destacados .resto_thumb {
+	float:left;
+	width:140px;
+	height:140px;
 	}
 .post .listado .txt,
 .post_recuadro .listado .txt {
@@ -92,50 +89,7 @@ h1 {
 	height:160px;
 	}
 
-.content_resto {
-	width: 100%;
-	background-color:#FFF;
-	}
-.content_resto .foto {
-	width:100%;
-	}
-.content_resto .foto img {
-	width:100%;
-	height:auto;
-	}
-.content_resto .recuadro {
-	padding:20px;
-	overflow:auto;
-	}
-.content_resto .recuadro h1 {
-	font-family: 'Proxima_nova_bold';
-	font-size:40px;
-	padding:20px 0px 20px 0px;
-	width:100%;
-	border-bottom:1px solid #000;
-	}
-.content_resto .mapa {
-	float:left;
-	width:100%;
-	height:250px;
-	}
-.content_resto .recuadro .txt {
-	float:left;
-	width:100%;
-	padding:30px 0px;
-	}
-.content_resto .recuadro .datos {
-	float:left;
-	width:100%;
-	padding:15px 0px 30px 0px;
-	border-top:1px solid #000;
-	font-size:14px;
-	line-height:normal;
-	}
-.content_resto .recuadro .datos .colum {
-	width:100%;
-	float:left;
-	}
+
 
 
 

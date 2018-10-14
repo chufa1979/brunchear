@@ -60,6 +60,12 @@ $query_rsnot = "SELECT * FROM brunchear_nota ORDER BY id DESC";
 $rsnot = mysql_query($query_rsnot, $cone) or die(mysql_error());
 $row_rsnot = mysql_fetch_assoc($rsnot);
 $totalRows_rsnot = mysql_num_rows($rsnot);
+
+mysql_select_db($database_cone, $cone);
+$query_rs_thumb_home = "SELECT * FROM brunchear_resto";
+$rs_thumb_home = mysql_query($query_rs_thumb_home, $cone) or die(mysql_error());
+$row_rs_thumb_home = mysql_fetch_assoc($rs_thumb_home);
+$totalRows_rs_thumb_home = mysql_num_rows($rs_thumb_home);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -124,11 +130,14 @@ $totalRows_rsnot = mysql_num_rows($rsnot);
     <div id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9289.89631531982!2d-58.43583105705647!3d-34.592165104766615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58a45f59d85%3A0x51f3ad320d4ec47a!2sSarkis!5e0!3m2!1ses!2sar!4v1539462795110" width="100%" height="465" frameborder="0" style="border:0" allowfullscreen></iframe></div>
   </div>
   <div class="home_destacados">
-    <div class="thumb"><img src="upload/resto1.jpg" width="200" height="110" alt="Resto1" /></div>
-    <div class="thumb"><img src="upload/resto2.jpg" width="200" height="110" alt="Resto1" /></div>
-    <div class="thumb"><img src="upload/resto3.jpg" width="200" height="110" alt="Resto1" /></div>
-    <div class="thumb"><img src="upload/resto1.jpg" width="200" height="110" alt="Resto1" /></div>
-    <div class="thumb"><img src="upload/resto2.jpg" width="200" height="110" alt="Resto1" /></div>
+<?php for($i=1; $i<=6; $i++) { ?>
+    <div class="resto_thumb" style="background-image:url(<?php echo $row_rs_thumb_home['imagen02']; ?>);" onclick="window.location = 'guia.php';">
+      	<div class="transp"><a href="resto.php" class="fancybox fancybox.iframe"><?php echo $row_rs_thumb_home['restaurante']; ?></a>
+        </div>
+    </div>  
+<?php $row_rs_thumb_home = mysql_fetch_assoc($rs_thumb_home);?>    
+<?php } ?>
+
   </div>
   <div class="banner_1100 separa_bottom"><a href="<?php echo $row_rs_banner_3['link']; ?>" target="_blank"><img src="<?php echo $row_rs_banner_3['banner']; ?>" alt="<?php echo $row_rs_banner_3['alt']; ?>" /></a></div>
   <div class="columna_50 separa_der">
@@ -154,4 +163,6 @@ $totalRows_rsnot = mysql_num_rows($rsnot);
 mysql_free_result($rs_banner_1);
 
 mysql_free_result($rsnot);
+
+mysql_free_result($rs_thumb_home);
 ?>

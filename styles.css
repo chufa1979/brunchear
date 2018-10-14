@@ -264,10 +264,6 @@ h2 {
 	margin-bottom:10px;
 	overflow:auto;
 	}
-.home_destacados .thumb {
-	float:left;
-	padding:0px 6px;
-	}
 .destaca_redes {
 	width:260px;
 	float:left;
@@ -328,10 +324,22 @@ h2 {
 	margin:0px 10px 10px 0px;
 	cursor:pointer;
 	}
-.resto_thumb:hover {
+.home_destacados .resto_thumb {
+	float:left;
+	width:166px;
+	height:166px;
+	background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+	margin:0px 10px 10px 0px;
+	cursor:pointer;
+	}
+.resto_thumb:hover,
+.home_destacados .resto_thumb:hover {
 	transform: scale(1.05);
 	}
-.resto_thumb .transp {
+.resto_thumb .transp,
+.home_destacados .resto_thumb .transp {
 	width:100%;
 	min-height:100%;
 	background-color:rgba(0, 0, 0, 0.5);
@@ -346,21 +354,27 @@ h2 {
 	align-items: center;
 	transition: all 0.3s ease;
 	}
-.resto_thumb .transp a {
+.resto_thumb .transp a,
+.home_destacados .resto_thumb .transp a {
 	color:#fff;
 	}
-.resto_thumb .transp:hover {
+.resto_thumb .transp:hover,
+.home_destacados .resto_thumb .transp:hover {
 	background-color:rgba(0, 0, 0, 0.0);
 	}
 
 /* RESTO LIGHTBOX  ============================ */
 .content_resto {
 	margin:0 auto;
-	width: 900px;
+	width: 100%;
 	background-color:#FFF;
 	}
 .content_resto .foto {
 	width:100%;
+	}
+.content_resto .foto img {
+	width:100%;
+	height:auto;
 	}
 .content_resto .recuadro {
 	padding:20px;
@@ -370,17 +384,18 @@ h2 {
 	font-family: 'Proxima_nova_bold';
 	font-size:40px;
 	padding:20px 0px 20px 0px;
-	width:580px;
+	width:100%;
 	border-bottom:1px solid #000;
 	}
 .content_resto .mapa {
-	float:right;
-	width:250px;
+	float:left;
+	width:100%;
 	height:250px;
+	padding-bottom:30px;
 	}
 .content_resto .recuadro .txt {
 	float:left;
-	width:580px;
+	width:100%;
 	padding:30px 0px;
 	}
 .content_resto .recuadro .datos {
@@ -395,8 +410,6 @@ h2 {
 	width:50%;
 	float:left;
 	}
-
-
 
 
 
